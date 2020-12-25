@@ -4,12 +4,11 @@ class BubbleSystem {
     this.origin = position.copy();
     this.bubbles = [];
   }
-
   addBubble() {
     let r = random(1);
     if (r < 0.6) {
       this.bubbles.push(new Bubble(this.origin));
-    } else { 
+    } else {
       this.bubbles.push(new Bubble50(this.origin));
       this.bubbles.push(new Bubble60(this.origin));
     }
